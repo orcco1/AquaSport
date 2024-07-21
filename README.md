@@ -34,3 +34,9 @@
 4. **Open a pull request for your commits**
 
 5. **Only reviewers can merge**
+
+## Tkinter usage
+ Tkinter is included by default with Python installations on Windows. If you have Python installed, you already have Tkinter available. No separate installation is needed.
+ If you're using linux, you'll have to install it
+ - Arch based distros:  sudo pacman -S tk
+ - Ubuntu based distros: sudo apt-get install python3-tk
