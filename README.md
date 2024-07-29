@@ -20,6 +20,13 @@
 5. **Run the app**
     python index.py
 
+6. **Database credentials**
+    if needed, create an issue specifiying why you need them.
+    - put the email to send the file
+    - choose me as a reviewer
+    - once you have the file, download it and copy it to "your/carpets/AquaSport"
+    - add to .gitignore
+
 ## Contribution guidelines
 
 1. **Create your own fork of the repository**
@@ -34,6 +41,8 @@
 4. **Open a pull request for your commits**
 
 5. **Only reviewers can merge**
+
+6. **Never push any sensitive data**
 
 ## Tkinter usage
  Tkinter is included by default with Python installations on Windows. If you have Python installed, you already have Tkinter available. No separate installation is needed.
