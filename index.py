@@ -1,29 +1,25 @@
 import tkinter as tk
 
-window = tk.Tk()
+def create_index():
+    index = tk.Tk()
+    index.title("AquaSport")
+    index.geometry("1280x720")
 
-window.title("AquaSport")
+    label_user = tk.Label(index, text="User:")
+    entry_user = tk.Entry(index)
 
-window.geometry("1280x720")
+    label_password = tk.Label(index, text="Password:")
+    entry_password = tk.Entry(index, show="*")
 
-label_user = tk.Label(window, text="User:")
+    login_btn = tk.Button(index, text="Login", command=set)
 
-entry_user = tk.Entry(window)
+    label_user.pack()
+    entry_user.pack()
+    label_password.pack()
+    entry_password.pack()
+    login_btn.pack()
 
-label_password = tk.Label(window, text="Password:")
+    index.mainloop()
 
-entry_password = tk.Entry(window, show="*")
-
-login_btn = tk.Button(window, text="Login", command=set)
-
-label_user.pack()
-
-entry_user.pack()
-
-label_password.pack()
-
-entry_password.pack()
-
-login_btn.pack()
-
-window.mainloop()
+if __name__ == "__main__":
+    create_index()
