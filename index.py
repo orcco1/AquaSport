@@ -1,4 +1,5 @@
 import tkinter as tk
+from controllers.indexController import *
 
 def create_index():
     index = tk.Tk()
@@ -11,7 +12,7 @@ def create_index():
     label_password = tk.Label(index, text="Password:")
     entry_password = tk.Entry(index, show="*")
 
-    login_btn = tk.Button(index, text="Login", command=set)
+    login_btn = tk.Button(index, text="Login", command=lambda:login_btn_clicked(index))
 
     label_user.pack()
     entry_user.pack()
