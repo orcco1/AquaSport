@@ -12,7 +12,7 @@ def create_index():
     label_password = tk.Label(index, text="Password:")
     entry_password = tk.Entry(index, show="*")
 
-    login_btn = tk.Button(index, text="Login", command=lambda:login_btn_clicked(index))
+    login_btn = tk.Button(index, text="Login", command=lambda:login_btn_clicked(index, entry_user.get()))
 
     label_user.pack()
     entry_user.pack()
